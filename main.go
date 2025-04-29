@@ -33,7 +33,7 @@ func email(input string) {
 }
 
 func password(input string) {
-	re, err := regexp.Compile("^[a-zA-Z0-9]{8}$") //Хотел сделать прикольней, но голова загружена из за завтрашнего зачета...
+	re, err := regexp.Compile("^[a-zA-Z0-9]{8,}$") //Хотел сделать прикольней, но голова загружена из за завтрашнего зачета...
 	if err != nil {
 		fmt.Println(err)
 	}
